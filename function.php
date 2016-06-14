@@ -1,3 +1,4 @@
+  <?php
    /*
      * Currency code to name function
      */
@@ -177,3 +178,4 @@
         }
         
     }
+?>
