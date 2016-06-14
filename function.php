@@ -5,7 +5,6 @@
     
     function currencyName($code)
     {
-        
         $arr = array(
             "AFN" => "Afghanistan Afghani",
             "ALL" => "Albanian Lek",
@@ -170,12 +169,6 @@
             "ZMK" => "Zambian Kwacha",
             "ZWD" => "Zimbabwe Dollar"
         );
-        
-        foreach ($arr as $k => $v) {
-            if ($k == $code) {
-                return $v;
-            }
-        }
-        
+        return (isset($arr[$code]) ? $arr[$code] : false);
     }
 ?>
